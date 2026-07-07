@@ -320,8 +320,8 @@ h1{
   border-radius:3px;
 }
 .diff-tag.base{color:var(--ink-dim); border:1px solid var(--line);}
-.diff-tag.up{color:var(--stamp); background:rgba(181,68,46,0.12);}
-.diff-tag.down{color:var(--moss); background:rgba(143,181,113,0.12);}
+.diff-tag.up{color:#6cc2e8; background:rgba(108,194,232,0.14);}
+.diff-tag.down{color:var(--stamp); background:rgba(181,68,46,0.14);}
 .dday{
   font-family:'JetBrains Mono',monospace;
   font-size:11px;
@@ -470,7 +470,7 @@ const DATA = [
 {name:"KPMB", company:"키그린", type:["관급","조달우수"], dims:[616,410,41], material:"HDPE, Masterbatch, 산화방지제, UV차단제", id:"24436953", cert:["우수제품","여성기업"], note:null, image:"images/03.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:"녹색, 볏짚색, 회색, 검은색", weight:570, regDate:"2021-12-09", priceInnovation:null},
 {name:"S-D", company:"키그린", type:["사급"], dims:[500,500,37], material:"LDPE/EVA/산화방지제/UV차단제", id:"23267132", cert:[], note:null, image:"images/51.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:"녹색", weight:900, regDate:"2017-08-30", priceInnovation:null},
 {name:"S-S", company:"키그린", type:["사급"], dims:[500,500,31], material:"EVA", id:null, cert:[], note:null, image:null, priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
-{name:"S-PL", company:"키그린", type:["사급"], dims:[500,500,30], material:"EVA", id:null, cert:[], note:null, image:null, priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
+{name:"S-PL", company:"키그린", type:["사급"], dims:[500,500,30], material:"EVA", id:null, cert:[], note:null, image:"images/52.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
 {name:"EGK-GR-5050", company:"어스그린코리아", type:["사급"], dims:[500,500,32], material:"폴리에틸렌", id:"25705742", cert:["혁신제품"], note:null, image:"images/07.jpg", priceDelivery:null, priceInstall:null, contractEnd:"2029.06.25", priceVenture:null, color:"녹색, 볏짚색", weight:null, regDate:"2025-02-28", priceInnovation:47000},
 {name:"SM-7", company:"오지에스공업", type:["관급"], dims:[500,500,25], material:"LLDPE", id:"25409697", cert:[], note:null, image:"images/08.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:27000, color:"녹색", weight:475, regDate:"2024-05-21", priceInnovation:null},
 {name:"핀그린/PIN-GR-500", company:"금룡", type:["관급"], dims:[500,500,53], material:"폴리에틸렌 등", id:"24673829", cert:[], note:"주문자상표부착", image:"images/48.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:43500, color:"녹색, 흰색 등", weight:750, regDate:"2022-07-26", priceInnovation:null},
@@ -487,10 +487,10 @@ const DATA = [
 {name:"그린펫트50/GB6000", company:"한설그린", type:["사급"], dims:[500,500,17], material:"HDPE", id:null, cert:[], note:null, image:"images/20.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
 {name:"상부이중형 2020 EGK-GRN100-2020", company:"어스그린코리아", type:["사급"], dims:[200,200,35], material:"HDPE/TPE", id:null, cert:["LH신자재"], note:"LH신자재(2017)", image:null, priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
 {name:"보울트", company:"한설그린", type:["관급"], dims:[500,500,32], material:"LDPE, POE (GreenPet Vault 기준)", id:"24887398", cert:[], note:"기존 보울트 소재 표기(LDPE, 연성소재)와 물품목록 상 GreenPet Vault 소재(LDPE, POE)가 달라 후자로 정정", image:"images/36.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:"녹색", weight:615, regDate:"2023-02-09", priceInnovation:null},
-{name:"S-P", company:"키그린", type:["사급"], dims:[500,500,31], material:"EVA", id:null, cert:[], note:null, image:null, priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
-{name:"S-E", company:"키그린", type:["사급"], dims:[457,457,28], material:"EVA", id:null, cert:[], note:null, image:null, priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
+{name:"S-P", company:"키그린", type:["사급"], dims:[500,500,31], material:"EVA", id:null, cert:[], note:null, image:"images/52.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
+{name:"S-E", company:"키그린", type:["사급"], dims:[457,457,28], material:"EVA", id:null, cert:[], note:null, image:"images/53.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
 {name:"S-A", company:"키그린", type:["사급"], dims:[500,500,31], material:"LDPE/EVA/산화방지제/UV차단제", id:"23267133", cert:[], note:null, image:"images/46.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:"녹색", weight:650, regDate:"2017-08-30", priceInnovation:null},
-{name:"S-L", company:"키그린", type:["사급"], dims:[333,333,30], material:"EVA", id:null, cert:[], note:null, image:null, priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
+{name:"S-L", company:"키그린", type:["사급"], dims:[333,333,30], material:"EVA", id:null, cert:[], note:null, image:"images/54.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:null, weight:null, regDate:null, priceInnovation:null},
 {name:"EGK-GR100-4040", company:"어스그린코리아", type:["관급"], dims:[400,400,30], material:"HDPE", id:"24422058", cert:["LH신자재"], note:"LH신자재(2017)", image:"images/27.jpg", priceDelivery:null, priceInstall:null, contractEnd:null, priceVenture:null, color:"녹색", weight:394, regDate:"2021-11-19", priceInnovation:null},
 {name:"KPMD", company:"키그린", type:["관급","조달우수"], dims:[616,410,48], material:"HDPE, Masterbatch, 산화방지제, UV차단제", id:"24384511", cert:["우수제품","여성기업"], note:null, image:"images/28.jpg", priceDelivery:60500, priceInstall:75900, contractEnd:"2027.01.15", priceVenture:null, color:"녹색, 볏짚색, 회색, 검은색", weight:1400, regDate:"2021-10-06", priceInnovation:null},
 {name:"KG-M500", company:"키그린", type:["관급","조달우수"], dims:[500,500,29], material:"EVA, Masterbatch, 산화방지제, UV차단제", id:"24902279", cert:["우수제품","여성기업"], note:null, image:"images/29.jpg", priceDelivery:38000, priceInstall:46200, contractEnd:"2027.01.25", priceVenture:null, color:"녹색, 볏짚색", weight:550, regDate:"2023-02-22", priceInnovation:null},
