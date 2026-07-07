@@ -370,8 +370,21 @@ h1{
   background:var(--surface-2);
   border-radius:3px;
   color:var(--ink-dim);
+  cursor:pointer;
+  transition:background .15s ease, color .15s ease;
 }
+.chip:hover{background:var(--moss-dim); color:var(--ink);}
 .chip b{color:var(--ink); font-weight:500;}
+
+.back-link{
+  display:inline-block;
+  font-size:12.5px;
+  color:var(--moss);
+  cursor:pointer;
+  margin-bottom:14px;
+  padding:4px 2px;
+}
+.back-link:hover{text-decoration:underline;}
 
 footer{
   margin-top:40px;
@@ -659,6 +672,13 @@ function diffScore(nums, item){
   return 9999;
 }
 
+function showProduct(idx){
+  const item = DATA[idx];
+  if(!item) return;
+  sectionLabel.style.display = 'none';
+  resultsEl.innerHTML = `<div class="back-link" onclick="renderBrowse()">← 전체 목록으로</div>` + renderCard(item);
+}
+
 function renderBrowse(){
   sectionLabel.style.display = 'none';
 
@@ -676,7 +696,7 @@ function renderBrowse(){
     if(items.length===0) return '';
     return `<div class="section-label">${title} (${items.length})</div>
     <div class="browse-chips" style="margin-bottom:22px;">
-      ${items.map(it=>`<span class="chip"><b>${it.company} ${it.name}</b> ${it.dims ? it.dims.join('×') : '규격없음'}</span>`).join('')}
+      ${items.map(it=>`<span class="chip" onclick="showProduct(${DATA.indexOf(it)})"><b>${it.company} ${it.name}</b> ${it.dims ? it.dims.join('×') : '규격없음'}</span>`).join('')}
     </div>`;
   }
 
@@ -707,7 +727,7 @@ function renderBrowse(){
         <span class="browse-count">${items.length}종</span>
       </div>
       <div class="browse-chips">
-        ${items.map(it=>`<span class="chip"><b>${it.name}</b> ${it.dims ? it.dims.join('×') : '규격없음'}</span>`).join('')}
+        ${items.map(it=>`<span class="chip" onclick="showProduct(${DATA.indexOf(it)})"><b>${it.name}</b> ${it.dims ? it.dims.join('×') : '규격없음'}</span>`).join('')}
       </div>
     </div>`;
   });
